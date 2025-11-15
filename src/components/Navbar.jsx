@@ -3,9 +3,9 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between mx-15 my-3 items-center'>
+    <div className='flex justify-between lg:mx-15 mx-8 my-3 items-center'>
         <img src="/Logo.png" alt="logo" />
-        <div className='w-1/3'>
+        <div className='w-1/3 md:w-75 hidden lg:block md:block'>
             <ul className='flex justify-between font-bold'>
                 <li>About Me</li>
                 <li>Skills</li>
