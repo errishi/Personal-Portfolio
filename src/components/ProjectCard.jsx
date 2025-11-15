@@ -9,8 +9,12 @@ const ProjectCard = ({image, title, description, gitlink, projectlink}) => {
             <h2 className='text-3xl font-bold mb-5'>{title}</h2>
             <p className='text-[14px]'>{description}</p>
             <div className='flex gap-10 mt-7'>
-                <Button variant="contained" className='bg-white'>See Project &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></Button>
-                <Button variant="outlined">Git &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></Button>
+                <a href={projectlink} target='blank'>
+                  <Button variant="contained" className='bg-white'>See Project &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></Button>
+                </a>
+                <a href={gitlink} target='blank'>
+                  <Button variant="outlined">Git &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></Button>
+                </a>
             </div>
         </div>
     </div>
