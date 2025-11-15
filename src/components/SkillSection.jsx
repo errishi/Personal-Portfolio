@@ -4,7 +4,7 @@ import Card from './Card';
 const SkillSection = () => {
   return (
     <div className='lg:mx-15 mx-8 my-8 mt-20'>
-        <h1 className='font-bold text-3xl text-center'>My Skills</h1>
+        <h1 className='font-bold text-3xl text-center'>My Skills & Tools</h1>
         <div className='flex justify-evenly lg:justify-center gap-x-12 md:justify-start flex-wrap'>
             <Card image={"/icon-html.svg"} name={"HTML"} />
             <Card image={"/icon-css.svg"} name={"CSS"} />
@@ -18,6 +18,9 @@ const SkillSection = () => {
             <Card image={"/icon-java.svg"} name={"Java"} />
             <Card image={"/icon-python.svg"} name={"Python"} />
             <Card image={"/icon-git.svg"} name={"Git"} />
+            <Card image={"/icon-figma.svg"} name={"Figma"} />
+            <Card image={"/icon-canva.png"} name={"Canva"} />
+            <Card image={"/icon-vscode.png"} name={"VS Code"} />
         </div>
     </div>
   )
