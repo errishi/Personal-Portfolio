@@ -13,7 +13,7 @@ const Navbar = () => {
                 <li className='hover:opacity-70 transition-all cursor-pointer'>Contact Me</li>
             </ul>
         </div>
-        <div>
+        <div id='navbtn'>
             <Button variant="contained">Resume &nbsp; <i class="fa-solid fa-download"></i></Button>
         </div>
     </div>
