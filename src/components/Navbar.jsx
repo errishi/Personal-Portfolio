@@ -7,10 +7,10 @@ const Navbar = () => {
         <img src="/Logo.png" alt="logo" />
         <div className='w-1/3 md:w-75 hidden lg:block md:block'>
             <ul className='flex justify-between font-bold'>
-                <li>About Me</li>
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>Contact Me</li>
+                <li className='hover:opacity-70 transition-all cursor-pointer'>About Me</li>
+                <li className='hover:opacity-70 transition-all cursor-pointer'>Skills</li>
+                <li className='hover:opacity-70 transition-all cursor-pointer'>Projects</li>
+                <li className='hover:opacity-70 transition-all cursor-pointer'>Contact Me</li>
             </ul>
         </div>
         <div>
