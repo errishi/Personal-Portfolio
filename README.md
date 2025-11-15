@@ -1,12 +1,7 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This is the portfolio of a B.Tech Computer Science student specializing in full-stack web development. The work showcases a passion for building user-centric and scalable applications, demonstrating a strong command of the complete development lifecycle, from UI/UX design to backend implementation.
+Key Skills & Strengths Highlighted:
+Core Stack: Expertise in the MERN stack (MongoDB, Express.js, React.js, Node.js).
+Frontend Foundations: Strong skills in HTML5, CSS, and JavaScript.
+CS Fundamentals: Proficient in Data Structures & Algorithms (using Java).
+Other Technologies: Exploration and use of Python.
+Focus: A keen eye for UI/UX design and end-to-end problem-solving.
