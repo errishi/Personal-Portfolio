@@ -3,7 +3,7 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between mx-10 my-3 items-center'>
+    <div className='flex justify-between mx-15 my-3 items-center'>
         <img src="/Logo.png" alt="logo" />
         <div className='w-1/3'>
             <ul className='flex justify-between font-bold'>
