@@ -5,6 +5,7 @@ import SocialMedia from './components/SocialMedia';
 import SkillSection from './components/SkillSection';
 import AboutSection from './components/AboutSection';
 import ProjectSection from './components/ProjectSection';
+import ContactForm from './components/ContactForm';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <SkillSection />
       <AboutSection />
       <ProjectSection />
+      <ContactForm />
     </>
   )
 }

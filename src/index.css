@@ -5,7 +5,11 @@
   font-family: "Outfit", sans-serif;
 }
 
-#navbtn > Button{
+#navbtn > Button, #submit-btn{
   background-color: black !important;
   color: white !important;
+}
+
+#navbtn > Button:hover, #submit-btn:hover{
+  opacity: 0.8;
 }
