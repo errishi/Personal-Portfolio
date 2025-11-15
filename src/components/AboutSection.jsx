@@ -1,4 +1,5 @@
 import React from 'react'
+import SocialMedia from './SocialMedia';
 
 const AboutSection = () => {
     return (
@@ -14,6 +15,9 @@ const AboutSection = () => {
                     With a keen eye for UI/UX design and a comprehensive understanding of end-to-end development, I am driven to tackle complex problems and deliver elegant solutions. I am actively seeking an internship or collaborative role where I can contribute to impactful projects and grow as a software engineer.
                     Open to networking and new opportunities. <b>Let's connect!</b>
                 </p>
+                <div className='mt-10 lg:mt-20'>
+                    <SocialMedia />
+                </div>
             </div>
         </div>
     )
