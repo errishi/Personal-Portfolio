@@ -8,6 +8,7 @@ import ProjectSection from './components/ProjectSection';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import ReactLenis from 'lenis/react';
+import { ToastContainer } from 'react-toastify';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
       }}
       >
         <Navbar />
+        <ToastContainer />
         <HeroSection />
         <SocialMedia />
         <SkillSection />

@@ -1,17 +1,59 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import TextareaAutosize from '@mui/material/TextareaAutosize';
 import Button from '@mui/material/Button';
 import SocialMedia from './SocialMedia';
+import { toast } from 'react-toastify';
 
 const ContactForm = () => {
+    const initialData = {
+        Name: '',
+        Email: '',
+        Website: '',
+        Message: ''
+    };
+
+    const [inputValue, setInputValue] = useState(initialData);
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+        formData.append("access_key", "767870a1-87ef-4946-9feb-4ad975513382");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+        if(data.success){
+            toast.success(data.message);
+            setInputValue(initialData);
+        }else{
+            toast.error(data.message);
+            setInputValue(initialData);
+        }
+    };
+
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+
+        setInputValue(preData => ({
+            ...preData, [name] : value
+        }));
+    };
+
     return (
-        <div className='flex justify-between flex-col lg:flex-row md:flex-row lg:mx-15 mx-8 my-3'>
+        <form onSubmit={onSubmit} className='flex justify-between flex-col lg:flex-row md:flex-row lg:mx-15 mx-8 my-3'>
             <div className='lg:w-[40%] md:w-[40%] w-full'>
-                <TextField id="outlined-basic" fullWidth size='small' label="Your Name" variant="outlined" />
-                <TextField id="outlined-basic" fullWidth size='small' margin='normal' label="Your Email" variant="outlined" />
-                <TextField id="outlined-basic" fullWidth size='small' margin='dense' label="Website (if exist)" variant="outlined" />
+                <TextField id="outlined-basic" name='Name' value={inputValue.Name} onChange={handleChange} required fullWidth size='small' label="Your Name" variant="outlined" />
+                <TextField id="outlined-basic" type='email' name='Email' value={inputValue.Email} onChange={handleChange} required fullWidth size='small' margin='normal' label="Your Email" variant="outlined" />
+                <TextField id="outlined-basic" name='Website' value={inputValue.Website} onChange={handleChange} fullWidth size='small' margin='dense' label="Website (if exist)" variant="outlined" />
                 <TextareaAutosize
+                    required
+                    value={inputValue.Message}
+                    onChange={handleChange}
+                    name='Message'
                     aria-label="minimum height"
                     minRows={3}
                     placeholder="How can I help?*"
@@ -19,7 +61,7 @@ const ContactForm = () => {
                     className='border rounded px-3 py-2 my-3 border-gray-400'
                 />
                 <div className='shadow-lg shadow-black/50 w-fit'>
-                    <Button id='submit-btn' variant="contained">Get In Touch</Button>
+                    <Button type='submit' id='submit-btn' variant="contained">Get In Touch</Button>
                 </div>
                 <div className='lg:mt-6.5 mt-12 lg:ml-35 md:-ml-15 -ml-35'>
                     <SocialMedia />
@@ -35,7 +77,7 @@ const ContactForm = () => {
                     <img src="/phone.svg" className='w-7' alt="mail" /> <p>+91 - 7704887523</p>
                 </p>
             </div>
-        </div>
+        </form>
     )
 }
 
