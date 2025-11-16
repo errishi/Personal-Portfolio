@@ -1,11 +1,22 @@
 import React from 'react';
 import Button from '@mui/material/Button';
+import * as motion from "motion/react-client";
 
 const ProjectCard = ({image, title, description, gitlink, projectlink}) => {
   return (
     <div className='lg:mt-15 mt-10 flex justify-evenly flex-col lg:flex-row items-center'>
-        <img src={image} className='rounded lg:w-[500px] md:w-[500px] w-[350px]' alt="project-image" />
-        <div className='lg:w-1/2 w-[95%] mt-10 lg:mt-0'>
+        <motion.img 
+        initial={{opacity: 0, y: 50}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{duration: 1}}
+
+        src={image} className='rounded lg:w-[500px] md:w-[500px] w-[350px]' alt="project-image" />
+        <motion.div 
+        initial={{opacity: 0, y: 50}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{duration: 1}}
+        
+        className='lg:w-1/2 w-[95%] mt-10 lg:mt-0'>
             <h2 className='text-3xl font-bold mb-5'>{title}</h2>
             <p className='text-[14px]'>{description}</p>
             <div className='flex gap-10 mt-7'>
@@ -16,7 +27,7 @@ const ProjectCard = ({image, title, description, gitlink, projectlink}) => {
                   <Button variant="outlined">Git &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></Button>
                 </a>
             </div>
-        </div>
+        </motion.div>
     </div>
   )
 }
