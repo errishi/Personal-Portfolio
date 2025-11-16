@@ -13,3 +13,15 @@
 #navbtn > Button:hover, #submit-btn:hover{
   opacity: 0.8;
 }
+
+#linkedin > li:hover{
+  color: #0077B5 !important;
+}
+
+#github > li:hover{
+  color: #778da9 !important;
+}
+
+#twitter > li:hover{
+  color: #9999a1 !important;
+}

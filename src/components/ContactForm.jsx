@@ -19,7 +19,7 @@ const ContactForm = () => {
                     className='border rounded px-3 py-2 my-3 border-gray-400'
                 />
                 <div className='shadow-lg shadow-black/50 w-fit'>
-                <Button id='submit-btn' variant="contained">Get In Touch</Button>
+                    <Button id='submit-btn' variant="contained">Get In Touch</Button>
                 </div>
                 <div className='lg:mt-6.5 mt-12 lg:ml-35 md:-ml-15 -ml-35'>
                     <SocialMedia />
