@@ -13,7 +13,7 @@ const Navbar = () => {
                 <li className='hover:opacity-70 transition-all cursor-pointer'>Contact Me</li>
             </ul>
         </div>
-        <a href="/Rishikesh_Singh_Resume_Latest.pdf" download>
+        <a href="/Rishikesh_Singh_Resume.pdf" download>
           <div id='navbtn' className='shadow-lg shadow-black/50'>
             <Button variant="contained">Resume &nbsp; <i class="fa-solid fa-download"></i></Button>
           </div>
