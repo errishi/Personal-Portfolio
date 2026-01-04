@@ -7,10 +7,18 @@ const Navbar = () => {
         <img src="/Logo.png" className='w-[120px]' alt="logo" />
         <div className='w-1/3 md:w-75 hidden lg:block md:block'>
             <ul className='flex justify-between font-bold'>
-                <li className='hover:opacity-70 transition-all cursor-pointer'>About Me</li>
-                <li className='hover:opacity-70 transition-all cursor-pointer'>Skills</li>
-                <li className='hover:opacity-70 transition-all cursor-pointer'>Projects</li>
-                <li className='hover:opacity-70 transition-all cursor-pointer'>Contact Me</li>
+                <a href="#about">
+                  <li className='hover:opacity-70 transition-all cursor-pointer'>About Me</li>
+                </a>
+                <a href="#skill">
+                  <li className='hover:opacity-70 transition-all cursor-pointer'>Skills</li>
+                </a>
+                <a href="#project">
+                  <li className='hover:opacity-70 transition-all cursor-pointer'>Projects</li>
+                </a>
+                <a href="#contact">
+                  <li className='hover:opacity-70 transition-all cursor-pointer'>Contact Me</li>
+                </a>
             </ul>
         </div>
         <a href="/Rishikesh_Singh_Resume.pdf" download>

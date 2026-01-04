@@ -3,7 +3,7 @@ import Card from './Card';
 
 const SkillSection = () => {
   return (
-    <div className='lg:mx-15 mx-8 my-8 mt-20'>
+    <div id='skill' className='lg:mx-15 mx-8 my-8 mt-20'>
         <h1 className='font-bold text-3xl text-center'>My Skills & Tools</h1>
         <div className='flex justify-evenly lg:justify-center gap-x-12 md:justify-start flex-wrap'>
             <Card image={"/icon-html.svg"} name={"HTML"} />

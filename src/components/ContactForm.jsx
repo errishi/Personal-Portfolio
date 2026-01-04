@@ -45,7 +45,7 @@ const ContactForm = () => {
     };
 
     return (
-        <form onSubmit={onSubmit} className='flex justify-between flex-col lg:flex-row md:flex-row lg:mx-15 mx-8 my-3'>
+        <form id='contact' onSubmit={onSubmit} className='flex justify-between flex-col lg:flex-row md:flex-row lg:mx-15 mx-8 my-3'>
             <motion.div 
             initial={{opacity: 0, y: 50}}
             whileInView={{opacity: 1, y: 0}}
@@ -84,9 +84,9 @@ const ContactForm = () => {
                 <p className='flex gap-3 my-5'>
                     <img src="/mail.svg" className='w-7' alt="mail" /> <p>singhrishikesh505@gmail.com</p>
                 </p>
-                <p className='flex gap-3 my-5'>
+                {/* <p className='flex gap-3 my-5'>
                     <img src="/phone.svg" className='w-7' alt="mail" /> <p>+91 - 7704887523</p>
-                </p>
+                </p> */}
             </motion.div>
         </form>
     )

@@ -4,7 +4,7 @@ import * as motion from "motion/react-client";
 
 const AboutSection = () => {
     return (
-        <div className='flex justify-evenly flex-col lg:flex-row lg:mx-15 lg:-ml-8 mx-8 my-3 mt-20'>
+        <div id='about' className='flex justify-evenly flex-col lg:flex-row lg:mx-15 lg:-ml-8 mx-8 my-3 mt-20'>
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
