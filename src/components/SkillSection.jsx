@@ -72,7 +72,7 @@ const SkillSection = () => {
                   whileHover={{ scale: 1.05, borderColor: '#06b6d4' }}
                   className='border-2 border-blue-500/40 rounded-xl p-6 hover:bg-blue-500/5 transition-all duration-300 group cursor-pointer'
                 >
-                  <div className='flex items-center gap-4'>
+                  <div className='flex lg:flex-row md:flex-row flex-col items-center gap-4'>
                     <div className='p-3 bg-blue-500/10 rounded-lg group-hover:bg-blue-500/20 transition-all'>
                       <img src={skill.image} alt={skill.name} className='w-8 h-8 group-hover:scale-110 transition-transform' />
                     </div>

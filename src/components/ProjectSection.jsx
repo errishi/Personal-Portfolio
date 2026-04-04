@@ -7,50 +7,42 @@ const ProjectSection = () => {
     {
       image: "/project-1.png",
       title: "ThaliExpress - E-commerce Platform",
-      techs: "React - Node.js - MongoDB",
+      techs: "React - Express - Node.js - MongoDB",
       description: "A full-featured e-commerce platform for online food delivery with product listings, shopping cart, and secure checkout functionality.",
       projectlink: "https://thali-express.vercel.app/",
       gitlink: "https://github.com/errishi/ThaliExpress-online-food-delivery"
     },
     {
-      image: "/project-2.png",
-      title: "Analytics Hub - Data Visualization",
-      techs: "React - D3.js - Node.js",
-      description: "Real-time analytics dashboard with interactive charts and data visualization capabilities.",
-      projectlink: "https://example.com/project-2",
-      gitlink: "https://github.com/example/project-2"
+      image: "/mistryMSG.png",
+      title: "BlindSpotMsg - Anonymous Feedback Platform",
+      techs: "Next.js - MongoDB - Node.js - Gen AI",
+      description: "An anonymous feedback platform that allows users to send and receive messages without revealing their identity, fostering open communication and honest feedback.",
+      projectlink: "https://blindspotmsg.vercel.app/",
+      gitlink: "https://github.com/errishi/blindspotmsg"
     },
     {
-      image: "/project-3.png",
-      title: "Connect - Social Network",
-      techs: "React - MongoDB - PostgreSQL",
-      description: "A social networking platform with real-time messaging and user collaboration features.",
-      projectlink: "https://example.com/project-3",
-      gitlink: "https://github.com/example/project-3"
-    },
-    {
-      image: "/project-4.png",
-      title: "TaskFlow - Real-time Collaboration",
-      techs: "Angular - Firebase - TypeScript",
+      image: "/codeweave.png",
+      title: "CodeWeave - Real-time Collaboration",
+      techs: "React - Express - Socket.IO - Docker - AWS",
       description: "Collaborative task management tool with real-time updates and team synchronization.",
       projectlink: "https://example.com/project-4",
-      gitlink: "https://github.com/example/project-4"
+      gitlink: "https://github.com/errishi/CodeWeave"
     },
     {
-      image: "/project-5.png",
-      title: "PennyWise - Finance Tracker",
-      techs: "React - Express - MySQL",
-      description: "Personal finance management application with expense tracking and budget planning.",
-      projectlink: "https://example.com/project-5",
-      gitlink: "https://github.com/example/project-5"
+      image: "/ems-system.png",
+      title: "Employee Management System with Admin Dashboard",
+      techs: "React - Local Storage",
+      description: "A simple employee management system that allows users to add, edit, and delete employee records with an intuitive admin dashboard.",
+      projectlink: "https://ems-system-alpha.vercel.app/",
+      gitlink: "https://github.com/errishi/EMS-System"
     },
     {
       image: "/project-6.png",
-      title: "ContentAI - Content Generator",
-      techs: "React - OpenAI API - Docker",
-      description: "AI-powered content generation tool with multiple content creation templates.",
+      title: "GenAI Resume Analyzer",
+      techs: "React - OpenAI API - MongoDB - Node.js - Express - Puppeteer",
+      description: "A resume analysis tool that uses OpenAI's language model to evaluate and provide feedback on resumes, helping job seekers optimize their applications for better chances of success.",
       projectlink: "https://example.com/project-6",
-      gitlink: "https://github.com/example/project-6"
+      gitlink: "https://github.com/errishi/resume-analyser-server"
     }
   ];
 

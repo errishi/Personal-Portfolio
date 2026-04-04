@@ -9,7 +9,7 @@ const Navbar = () => {
     { label: 'About', href: '#about' },
     { label: 'Skills', href: '#skill' },
     { label: 'Projects', href: '#project' },
-    { label: 'Experience', href: '#contact' }
+    { label: 'Education', href: '#education' }
   ];
 
   return (
@@ -72,7 +72,7 @@ const Navbar = () => {
           exit={{ opacity: 0, y: -20 }}
           className='lg:hidden bg-slate-800/95 border-t border-cyan-500/30 px-8 py-4'
         >
-          <ul className='flex flex-col gap-4'>
+          <ul className='flex flex-col gap-4 mb-5'>
             {navLinks.map((link, index) => (
               <li key={index}>
                 <a 

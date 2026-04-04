@@ -57,7 +57,7 @@ const Education = () => {
   };
 
   return (
-    <div id='contact' className='bg-linear-to-b from-slate-950 to-slate-900 py-20'>
+    <div id='education' className='bg-linear-to-b from-slate-950 to-slate-900 py-20'>
       <div className='lg:mx-15 mx-8'>
         {/* Header */}
         <motion.div
