@@ -9,7 +9,8 @@ const Navbar = () => {
     { label: 'About', href: '#about' },
     { label: 'Skills', href: '#skill' },
     { label: 'Projects', href: '#project' },
-    { label: 'Education', href: '#education' }
+    { label: 'Education', href: '#education' },
+    { label: 'Contact', href: '#contact' }
   ];
 
   return (
@@ -23,8 +24,8 @@ const Navbar = () => {
         {/* Logo */}
         <div className='flex items-center gap-2 cursor-pointer'>
           <Link to={'/'}>
-            <span className='text-cyan-400 font-bold text-lg'>DEV</span>
-            <span className='text-white font-bold text-lg'>PORTFOLIO</span>
+            <span className='text-cyan-400 font-bold text-lg'>&lt;RISHIKESH</span>
+            <span className='text-white font-bold text-lg'>SINGH /&gt;</span>
           </Link>
         </div>
 
