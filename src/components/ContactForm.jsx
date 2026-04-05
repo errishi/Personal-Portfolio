@@ -43,7 +43,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div id='contact' className='bg-linear-to-b from-slate-950 to-slate-900 py-20'>
+        <div id='contact' className='bg-linear-to-b from-transparent via-slate-950 to-slate-900 py-20'>
             <div className='lg:mx-15 mx-8'>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

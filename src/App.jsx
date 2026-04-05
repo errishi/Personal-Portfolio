@@ -37,7 +37,7 @@ const App = () => {
         }}
       >
           <Navbar />
-          <ToastContainer />
+          <ToastContainer theme="dark" />
           <HeroSection />
           <SkillSection />
           <AboutSection />

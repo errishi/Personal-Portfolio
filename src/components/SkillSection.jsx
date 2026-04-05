@@ -35,7 +35,7 @@ const SkillSection = () => {
   ];
 
   return (
-    <div id='skill' className='bg-linear-to-b from-slate-950 via-slate-900 to-slate-950 py-20'>
+    <div id='skill' className='bg-linear-to-b from-transparent via-slate-950 to-transparent py-20'>
       <div className='lg:mx-15 mx-8'>
         {/* Header */}
         <motion.div

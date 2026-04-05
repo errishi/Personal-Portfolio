@@ -60,7 +60,7 @@ const Education = () => {
   ];
 
   return (
-    <div id='education' className='bg-linear-to-b from-slate-950 to-slate-900 py-20'>
+    <div id='education' className='bg-linear-to-b from-transparent via-slate-950 to-slate-900 py-20'>
       <div className='lg:mx-15 mx-8'>
         {/* Header */}
         <motion.div
@@ -79,7 +79,7 @@ const Education = () => {
         <div className='grid lg:grid-cols-2 gap-12 mt-12'>
           {/* Left Side - Education */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             className='space-y-12'
@@ -122,7 +122,7 @@ const Education = () => {
           {/* Right Side - Contact Form */}
           <motion.div>
             <div>
-              <h2 className='text-2xl font-bold text-white mb-3 tracking-widest'>Certifications</h2>
+              <h2 className='text-2xl font-bold text-white mb-6 tracking-widest'>Certifications</h2>
 
               <div className='space-y-6'>
                 {certifications.map((cert, index) => (

@@ -26,7 +26,7 @@ const AboutSection = () => {
     ];
 
     return (
-        <div id='about' className='bg-linear-to-b from-slate-900 via-slate-950 to-slate-900 py-20 relative overflow-hidden'>
+        <div id='about' className='bg-linear-to-b from-slate-900 via-slate-950 to-transparent py-20 relative overflow-hidden'>
             {/* Background Circuit Pattern */}
             <div className='absolute inset-0 opacity-5'>
                 <svg className='w-full h-full' viewBox='0 0 1200 800'>
