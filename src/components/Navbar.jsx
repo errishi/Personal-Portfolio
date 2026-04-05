@@ -66,11 +66,12 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
+        <div className='w-full h-screen'>
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className='lg:hidden bg-slate-800/95 border-t border-cyan-500/30 px-8 py-4'
+          className='lg:hidden bg-slate-900/10 backdrop-blur-lg border-t border-cyan-400/20 px-8 py-4'
         >
           <ul className='flex flex-col gap-4 mb-5'>
             {navLinks.map((link, index) => (
@@ -91,10 +92,11 @@ const Navbar = () => {
             href="/Rishikesh_Singh_Resume.pdf"
             download
             className='w-full bg-cyan-400 hover:bg-cyan-500 text-slate-900 font-semibold px-6 py-2 rounded-lg mt-4 transition-all cursor-pointer'
-          >
+            >
             Hire Me
           </motion.a>
         </motion.div>
+      </div>
       )}
     </motion.nav>
   )
