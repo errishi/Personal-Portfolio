@@ -3,9 +3,9 @@ import * as motion from "motion/react-client";
 
 const HeroSection = () => {
   const stats = [
-    { icon: "👤", label: "5+ Years", text: "Experience" },
-    { icon: "⚡", label: "50+", text: "Projects Delivered" },
-    { icon: "💻", label: "Tech Stack:", text: "React, Node.js, Python, AWS" },
+    { icon: "👤", label: "3 Months", text: "Experience" },
+    { icon: "⚡", label: "2+", text: "Projects Delivered" },
+    { icon: "💻", label: "Tech Stack:", text: "React, Next.js, Node.js, Express.js, MongoDB, Docker, Python, AWS" },
     { icon: "✨", label: "Performance", text: "Optimization Expert" }
   ];
 
@@ -34,7 +34,6 @@ const HeroSection = () => {
           <motion.button
             whileHover={{scale: 1.05}}
             whileTap={{scale: 0.95}}
-            
             className='bg-cyan-400 hover:bg-cyan-500 text-slate-900 font-semibold px-6 py-3 rounded-lg mb-12 transition-all'
           >
             Hire Me
