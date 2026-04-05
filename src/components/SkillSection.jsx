@@ -4,38 +4,33 @@ import * as motion from "motion/react-client";
 const SkillSection = () => {
   const skills = [
     { image: "/icon-react.svg", name: "React Js" },
+    { image: "/icon-nextjs.svg", name: "Next Js" },
     { image: "/icon-node.svg", name: "Node.js" },
     { image: "/icon-html.svg", name: "HTML" },
     { image: "/icon-css.svg", name: "CSS" },
     { image: "/icon-javscript.svg", name: "JavaScript" },
     { image: "/icon-bootstrap.svg", name: "Bootstrap" },
-    { image: "/icon-tailwindcss.png", name: "Tailwind CSS" },
+    { image: "/icon-tailwindcss.svg", name: "Tailwind CSS" },
     { image: "/icon-mongodb.png", name: "MongoDB" },
-    { image: "/expressjs.png", name: "Express Js" },
+    { image: "/expressjs.svg", name: "Express Js" },
     { image: "/icon-java.svg", name: "Java" },
     { image: "/icon-python.svg", name: "Python" },
-    { image: "/icon-git.svg", name: "Git" },
+    { image: "/icon-ejs.svg", name: "EJS" },
+    { image: "/github.svg", name: "Git & Github" },
     { image: "/icon-figma.svg", name: "Figma" },
     { image: "/icon-canva.png", name: "Canva" },
-    { image: "/icon-vscode.png", name: "VS Code" }
+    { image: "/icon-vscode.svg", name: "VS Code" },
+    { image: "/icon-docker.svg", name: "Docker" },
+    { image: "/icon-aws.svg", name: "AWS" },
+    { image: "/icon-vercel.png", name: "Vercel" },
   ];
 
   const experiences = [
     {
-      period: "Jan 2022 - Present",
-      title: "Senior Full-Stack Developer at InnovateTech Solutions",
-      description: "Led cloud-native microservices, optimized API performance by 40%, and mentored junior developers."
+      period: "Dec 2025 - Present",
+      title: "Full-Stack Developer Intern at Mission Global",
+      description: "Developing and maintaining web applications using React, Node.js, and MongoDB. Collaborating with cross-functional teams to design and implement new features, optimize performance, and ensure responsive design across devices."
     },
-    {
-      period: "Jun 2019 - Dec 2021",
-      title: "Full-Stack Developer at WebSphere Solutions",
-      description: "Developed responsive e-commerce platforms, implemented CI/CD pipelines, and collaborated in Agile teams."
-    },
-    {
-      period: "May 2017 - May 2019",
-      title: "Junior Developer at CodeCraft Agency",
-      description: "Built custom WordPress themes, maintained legacy systems, and assisted in front-end integration."
-    }
   ];
 
   return (
@@ -61,8 +56,8 @@ const SkillSection = () => {
             transition={{ duration: 0.8 }}
             className='lg:col-span-2'
           >
-            <h2 className='text-2xl font-bold text-white mb-10 tracking-widest'>SKILLS</h2>
-            <div className='grid grid-cols-2 gap-6'>
+            <h2 className='text-2xl font-bold text-white mb-10 tracking-widest'>SKILLS & TOOLS</h2>
+            <div className='grid lg:grid-cols-3 grid-cols-2 gap-6'>
               {skills.map((skill, index) => (
                 <motion.div
                   key={index}
@@ -74,7 +69,7 @@ const SkillSection = () => {
                 >
                   <div className='flex lg:flex-row md:flex-row flex-col items-center gap-4'>
                     <div className='p-3 bg-blue-500/10 rounded-lg group-hover:bg-blue-500/20 transition-all'>
-                      <img src={skill.image} alt={skill.name} className='w-8 h-8 group-hover:scale-110 transition-transform' />
+                      <img src={skill.image} alt={skill.name} className='w-10 h-10 transition-transform' />
                     </div>
                     <span className='text-white font-semibold text-base group-hover:text-cyan-300 transition-colors'>{skill.name}</span>
                   </div>
