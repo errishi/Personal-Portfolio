@@ -2,59 +2,62 @@ import React, { useState } from 'react'
 import * as motion from "motion/react-client";
 
 const Education = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
 
   const academics = [
     {
-      icon: "🎓",
-      degree: "Master of Science in Computer Science",
-      university: "Stanford University",
-      details: "University of Science in Computer science and the University",
-      year: "2023"
+      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSvhIRmO4HJufxuC2kmA2VtoTy1zMM4XF75A&s",
+      degree: "B-Tech in Computer Science and Engineering",
+      grade: "8.23 CGPA",
+      university: "Dr. A. P. J. Abdul Kalam Technical University",
+      details: "AKTU is a renowned technical university in India, offering comprehensive education in engineering and technology.",
+      year: "2023 - 2027"
     },
     {
-      icon: "🏆",
-      degree: "Bachelor of Science in Information Technology",
-      university: "Massachusetts Institute of Technology",
-      details: "University of Science in Information Institute and Technology",
-      year: "2024"
+      icon: "https://www.clipartmax.com/png/middle/262-2620113_cbse-logo-central-board-of-secondary-education.png",
+      degree: "Intermediate in PCM With Computer Science",
+      university: "Central Board of Secondary Education (CBSE)",
+      details: "CBSE is a prestigious educational board in India, providing quality education and preparing students for competitive exams.",
+      year: "2021 - 2023"
     }
   ];
 
   const certifications = [
     {
-      icon: "aws",
-      name: "AWS Certified Developer - Associate",
-      provider: "Amazon Web Services",
-      details: "AWS Certified Developer - Associate in AWS/3 certain develops and a Amazon Web Services.",
-      year: "2023"
+      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT73XgLxTTKH_QCnRuhHfPIpbaNJtRW0_Tug&s",
+      name: "Full Stack Certified Developer",
+      provider: "Apna College",
+      details: "Full Stack Developer certification for course completion and hands-on practice to build applications independently.",
+      year: "Sept 2025"
     },
     {
-      icon: "google",
-      name: "Google Professional Cloud Developer",
-      provider: "Google Cloud",
-      details: "Google Professional Cloud Developer for hackathons in Google Cloud.",
-      year: "2024"
-    }
+      icon: "https://handshake.softproindia.in/css/logo.png",
+      name: "Full Stack Web Development Workshop",
+      provider: "SoftPro India",
+      details: "Intensive workshop on full stack web development with hands-on projects.",
+      year: "Sept 2025"
+    },
+    {
+      icon: "https://i0.wp.com/opportunitycell.com/wp-content/uploads/2022/03/SIH2.png?fit=327%2C345&ssl=1",
+      name: "Smart India Hackathon Participant - 2025",
+      provider: "Smart India Hackathon",
+      details: "Intensive workshop on full stack web development with hands-on projects.",
+      year: "Sept 2025"
+    },
+    {
+      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Physics_wallah_logo.jpg/250px-Physics_wallah_logo.jpg",
+      name: "Generative AI (PW Skills x Microsoft)",
+      provider: "PW Skills",
+      details: "Comprehensive training on generative AI technologies and applications.",
+      year: "Jan 2026"
+    },
+    {
+      icon: "https://media.licdn.com/dms/image/v2/D560BAQEhpRwiRxCO-g/company-logo_200_200/company-logo_200_200/0/1721277934092/be10x_in_logo?e=2147483647&v=beta&t=Tl6ZTAFazAy4CMJgUaBGQNM0qbbQPDGQVSDXa6K0K54",
+      name: "AI Tools Workshop",
+      provider: "Be10x",
+      details: "Hands-on workshop on AI tools and their applications in various industries.",
+      year: "Feb 2026"
+    },
   ];
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    setFormData({ name: '', email: '', message: '' });
-  };
 
   return (
     <div id='education' className='bg-linear-to-b from-slate-950 to-slate-900 py-20'>
@@ -85,7 +88,7 @@ const Education = () => {
             <div>
               <h2 className='text-2xl font-bold text-white mb-3 tracking-widest'>Academics</h2>
               <p className='text-gray-400 text-sm mb-8'>Degrees and exploits to graduates activities.</p>
-              
+
               <div className='space-y-6'>
                 {academics.map((item, index) => (
                   <motion.div
@@ -96,8 +99,8 @@ const Education = () => {
                     className='flex gap-4 group'
                   >
                     {/* Icon */}
-                    <div className='shrink-0 w-16 h-16 bg-white rounded-full flex items-center justify-center text-2xl font-bold text-slate-900 group-hover:scale-110 transition-transform'>
-                      {item.icon}
+                    <div className='shrink-0 w-16 h-16 bg-white rounded-full flex items-center justify-center text-2xl font-bold text-slate-900 group-hover:scale-110 transition-transform overflow-clip p-1'>
+                      <img src={item.icon} alt="icon" />
                     </div>
 
                     {/* Content */}
@@ -105,16 +108,16 @@ const Education = () => {
                       <h3 className='text-white font-bold text-base mb-1'>{item.degree}</h3>
                       <p className='text-gray-300 font-semibold text-sm mb-1'>{item.university}</p>
                       <p className='text-gray-400 text-xs mb-2'>{item.details}</p>
+                      <p className='text-gray-400 text-xs mb-2'>{item.grade}</p>
                       <p className='text-cyan-400 text-xs font-semibold'>{item.year}</p>
                     </div>
                   </motion.div>
                 ))}
               </div>
             </div>
-
-            {/* Certifications Section */}
-            
           </motion.div>
+
+          {/* Certifications Section */}
 
           {/* Right Side - Contact Form */}
           <motion.div>
@@ -131,8 +134,8 @@ const Education = () => {
                     className='flex gap-4 group'
                   >
                     {/* Icon Circle */}
-                    <div className='shrink-0 w-16 h-16 bg-white rounded-full flex items-center justify-center font-bold text-slate-900 group-hover:scale-110 transition-transform text-sm'>
-                      {cert.icon === 'aws' ? 'AWS' : 'GCP'}
+                    <div className='shrink-0 w-16 h-16 bg-white rounded-full flex items-center justify-center font-bold text-slate-900 group-hover:scale-110 transition-transform text-sm overflow-clip'>
+                      <img src={cert.icon} alt={cert.provider} />
                     </div>
 
                     {/* Content */}

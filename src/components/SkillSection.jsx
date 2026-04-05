@@ -12,6 +12,7 @@ const SkillSection = () => {
     { image: "/icon-bootstrap.svg", name: "Bootstrap" },
     { image: "/icon-tailwindcss.svg", name: "Tailwind CSS" },
     { image: "/icon-mongodb.png", name: "MongoDB" },
+    { image: "/icon-sql.svg", name: "SQL" },
     { image: "/expressjs.svg", name: "Express Js" },
     { image: "/icon-java.svg", name: "Java" },
     { image: "/icon-python.svg", name: "Python" },
