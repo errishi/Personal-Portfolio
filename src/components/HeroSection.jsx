@@ -14,7 +14,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <div className='bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen flex items-center py-20'>
+    <div className='bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen flex items-center py-20 mt-10'>
       <div className='lg:mx-15 mx-8 w-full flex items-center flex-col lg:flex-row gap-12'>
         {/* Left Content */}
         <motion.div 

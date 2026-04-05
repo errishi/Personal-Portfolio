@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import SkillSection from './components/SkillSection';
@@ -9,8 +9,18 @@ import Footer from './components/Footer';
 import ReactLenis from 'lenis/react';
 import { ToastContainer } from 'react-toastify';
 import Education from './components/Education';
+import { PortfolioContext } from './context';
+import Loading from './components/Loading';
 
 const App = () => {
+  const { loading } = useContext(PortfolioContext);
+
+  if(loading) {
+    return (
+      <Loading />
+    );
+  }
+
   return (
     <div className='bg-slate-900 text-gray-300 overflow-hidden min-h-screen'>
       <ReactLenis
