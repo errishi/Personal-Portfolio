@@ -1,5 +1,4 @@
 import React from 'react'
-import ProjectCard from './ProjectCard';
 import * as motion from "motion/react-client";
 
 const ProjectSection = () => {
@@ -7,7 +6,7 @@ const ProjectSection = () => {
     {
       image: "/project-1.png",
       title: "ThaliExpress - E-commerce Platform",
-      techs: "React - Express - Node.js - MongoDB",
+      techs: "React - Tailwind CSS - Express - Node.js - MongoDB",
       description: "A full-featured e-commerce platform for online food delivery with product listings, shopping cart, and secure checkout functionality.",
       projectlink: "https://thali-express.vercel.app/",
       gitlink: "https://github.com/errishi/ThaliExpress-online-food-delivery"
@@ -15,7 +14,7 @@ const ProjectSection = () => {
     {
       image: "/mistryMSG.png",
       title: "BlindSpotMsg - Anonymous Feedback Platform",
-      techs: "Next.js - MongoDB - Node.js - Gen AI",
+      techs: "Next.js - Tailwind CSS - MongoDB - Node.js - Gen AI",
       description: "An anonymous feedback platform that allows users to send and receive messages without revealing their identity, fostering open communication and honest feedback.",
       projectlink: "https://blindspotmsg.vercel.app/",
       gitlink: "https://github.com/errishi/blindspotmsg"
@@ -23,7 +22,7 @@ const ProjectSection = () => {
     {
       image: "/codeweave.png",
       title: "CodeWeave - Real-time Collaboration",
-      techs: "React - Express - Socket.IO - Docker - AWS",
+      techs: "React - Tailwind CSS - Express - Socket.IO - Docker - AWS",
       description: "Collaborative task management tool with real-time updates and team synchronization.",
       projectlink: "https://example.com/project-4",
       gitlink: "https://github.com/errishi/CodeWeave"
@@ -31,15 +30,15 @@ const ProjectSection = () => {
     {
       image: "/ems-system.png",
       title: "Employee Management System with Admin Dashboard",
-      techs: "React - Local Storage",
+      techs: "React - Tailwind CSS - Local Storage",
       description: "A simple employee management system that allows users to add, edit, and delete employee records with an intuitive admin dashboard.",
       projectlink: "https://ems-system-alpha.vercel.app/",
       gitlink: "https://github.com/errishi/EMS-System"
     },
     {
-      image: "/project-6.png",
-      title: "GenAI Resume Analyzer",
-      techs: "React - OpenAI API - MongoDB - Node.js - Express - Puppeteer",
+      image: "/resume-analyzer-genAi.png",
+      title: "GenAI Resume Analyzer - Optimize Your Resume with AI",
+      techs: "React - Tailwind CSS - OpenAI API - MongoDB - Node.js - Express - Puppeteer",
       description: "A resume analysis tool that uses OpenAI's language model to evaluate and provide feedback on resumes, helping job seekers optimize their applications for better chances of success.",
       projectlink: "https://example.com/project-6",
       gitlink: "https://github.com/errishi/resume-analyser-server"
@@ -106,7 +105,7 @@ const ProjectSection = () => {
                       rel='noopener noreferrer'
                       className='flex-1'
                     >
-                      <button className='w-full bg-slate-700/50 border border-slate-600 hover:bg-slate-700 hover:border-cyan-400 text-white font-semibold py-2 px-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 text-xs'>
+                      <button className='w-full bg-slate-700/50 border border-slate-600 hover:bg-slate-700 hover:border-cyan-400 text-white font-semibold py-2 px-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 text-xs cursor-pointer'>
                         <i className="fa-solid fa-code"></i>
                         View Code
                       </button>
@@ -120,7 +119,7 @@ const ProjectSection = () => {
                       rel='noopener noreferrer'
                       className='flex-1'
                     >
-                      <button className='w-full bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-2 px-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 text-xs'>
+                      <button className='w-full bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-2 px-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 text-xs cursor-pointer'>
                         Live Demo
                         <i className="fa-solid fa-arrow-up-right-from-square"></i>
                       </button>
