@@ -40,7 +40,7 @@ const Education = () => {
       icon: "https://i0.wp.com/opportunitycell.com/wp-content/uploads/2022/03/SIH2.png?fit=327%2C345&ssl=1",
       name: "Smart India Hackathon Participant - 2025",
       provider: "Smart India Hackathon",
-      details: "Intensive workshop on full stack web development with hands-on projects.",
+      details: "Participated in the prestigious Smart India Hackathon 2025, showcasing problem-solving skills and innovative solutions.",
       year: "Sept 2025"
     },
     {
