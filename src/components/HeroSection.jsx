@@ -7,7 +7,7 @@ import StarIcon from '@mui/icons-material/Star';
 
 const HeroSection = () => {
   const stats = [
-    { icon: <AccountCircleIcon sx={{color: '#06b6d4', fontSize: '1.75rem'}} />, label: "3 Months", text: "Experience" },
+    { icon: <AccountCircleIcon sx={{color: '#06b6d4', fontSize: '1.75rem'}} />, label: "6 Months", text: "Experience" },
     { icon: <FlashOnIcon sx={{color: '#06b6d4', fontSize: '1.75rem'}} />, label: "5+", text: "Projects Delivered" },
     { icon: <LaptopMacIcon sx={{color: '#06b6d4', fontSize: '1.75rem'}} />, label: "Tech Stack:", text: "React, Next.js, Node.js, Express.js, MongoDB, Docker, Python, AWS" },
     { icon: <StarIcon sx={{color: '#06b6d4', fontSize: '1.75rem'}} />, label: "Full Stack", text: "MERN Development" }

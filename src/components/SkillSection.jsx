@@ -28,7 +28,7 @@ const SkillSection = () => {
 
   const experiences = [
     {
-      period: "Dec 2025 - Present",
+      period: "Dec 2025 - May 2026",
       title: "Full-Stack Developer Intern at Mission Global",
       description: "Developing and maintaining web applications using React, Node.js, and MongoDB. Collaborating with cross-functional teams to design and implement new features, optimize performance, and ensure responsive design across devices."
     },
